@@ -58,7 +58,7 @@ bool addAppConfig(const string &filename);
 
 ![tars-config](images/tars_config_appconfig_result.png)
 
-###1.2.2. 获取服务级配置
+### 1.2.2. 获取服务级配置
 
 目前业务获取服务级别的配置信息方式是使用框架中提供的addConfig接口实现,该接口负责向configServer服务拉取相应的服务配置文件到本地目录。
 ```
