@@ -54,9 +54,9 @@ namespace tars
  * };
  * 对象的创建方式由CreatePolicy指定, 有如下方式:
  * 
- * CreateUsingNew: 在堆中采用new创建
+ * CreateUsingNew: 采用new创建, 在堆中
  * 
- * CreateStatic`: 在栈中采用static创建
+ * CreateStatic: 采用static创建, 在数据段中
  * 
  * 对象生命周期管理由LifetimePolicy指定, 有如下方式:
  * 
@@ -64,7 +64,7 @@ namespace tars
  * 
  *如果单件对象已经析够, 但是还有调用, 会触发异常 
  * 
- * PhoneixLifetime:不死生命周期
+ * PhoenixLifetime:不死生命周期
  * 
  * 如果单件对象已经析够, 但是还有调用, 会再创建一个
  * 
