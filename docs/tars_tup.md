@@ -173,7 +173,7 @@ key说明：
 
 key详细说明：
 
-> * key[Stuct, member…]：
+> * key[Struct, member…]：
 
 > * Struct：表示结构的名称
 
