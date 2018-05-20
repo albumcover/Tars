@@ -47,13 +47,13 @@ void TC_ThreadControl::detach()
 {
     if(pthread_self() == _thread)
     {
-        throw TC_ThreadThreadControl_Exception("[TC_ThreadControl::join] can't be called in the same thread");
+        throw TC_ThreadThreadControl_Exception("[TC_ThreadControl::detach] can't be called in the same thread");
     }
 
     int rc = pthread_detach(_thread);
     if(rc != 0)
     {
-        throw TC_ThreadThreadControl_Exception("[TC_ThreadControl::join] pthread_join error", rc);
+        throw TC_ThreadThreadControl_Exception("[TC_ThreadControl::detach] pthread_detach error", rc);
     }
 }
 
